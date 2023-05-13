@@ -1,0 +1,7 @@
+// Link do Google Fonts
+https://fonts.google.com/share?selection.family=Roboto:wght@300;400;500;700
+
+// Link para o CSS
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+</style>

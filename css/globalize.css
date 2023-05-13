@@ -1,0 +1,191 @@
+html {
+    font-size: 10px;
+}
+
+body {
+    background-color: var(--black);
+}
+
+/*HEADER*/
+
+.header-page {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: absolute;    
+    background-color: var(--header-gray);
+    height: 8rem;
+    width: 100%;
+    padding: 0 20rem;
+
+}
+
+.header-links {
+    color: var(--light-gray);
+    font-family: 'Gotham HTF Book';
+    font-size: 1.5rem;
+    padding: 0 4rem;
+    font-weight: 500;
+    letter-spacing: 0.05em;
+    transition: .2s;
+}
+
+#header-btn {
+    font-family: 'Gotham HTF Book';
+    font-size: 1.2rem;
+    font-weight: 500;
+    text-decoration: none;
+    padding: 12px 0;
+    text-align: center;
+    border: 2px solid var(--magenta);
+    transition: .2s;
+    text-transform: uppercase;
+    background-color: var(--magenta);
+    width: 15rem;
+    color: var(--white);
+}
+
+#header-btn:hover {
+    box-shadow: 0 0 20px var(--magenta);
+}
+
+.header-links:hover {
+    color: var(--magenta);
+    text-shadow: 0 0 20px rgba(237, 20, 91, 0.5);
+}
+
+
+/*HERO SECTION */
+
+.hero-section  {
+    background-image: url(../img/header.png);
+    background-position: center;    
+    height: 110vh;
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+    flex-direction: column;
+    
+    
+}
+
+.hero-container {
+    font-family: 'Gotham HTF Book';
+    color: var(--light-gray);    
+    text-transform: uppercase;    
+    margin-top: 28rem;     
+        
+}
+
+.hero-section h1 {
+    font-size: 6rem;    
+    margin: 1.2rem 0;
+    
+}
+
+.hero-section h2 {
+    font-size: 4rem;    
+    
+}
+
+.hero-scroll {
+    margin-bottom: 20rem;
+    border: 1px solid grey;
+    height: 10rem;
+}
+
+.hero-scroll p {
+    font-size: 1.1rem;      
+    color: var(--light-gray);  
+    text-transform: uppercase;  
+    margin-bottom: 3rem;  
+}
+
+#hero-arrow {
+    border: 0.1rem solid var(--magenta);
+    width: 10rem;
+    height: 10rem;
+    
+}
+
+#hero-btn {
+    margin-bottom: 18rem;
+    
+}
+
+.btn-container {
+    margin: 0 auto;
+    font-family: 'Gotham HTF Book';
+    font-size: 1.2rem;
+    font-weight: 500;
+    text-decoration: none;
+    padding: 12px 0;
+    text-align: center;
+    border: 2px solid var(--magenta);
+    color: var(--magenta);
+    transition: .2s;
+    text-transform: uppercase;
+    width: 15rem;
+    text-align: center;
+}
+
+.btn-container:hover {
+    background-color: var(--magenta);
+    text-shadow: 0 0 20px rgba(237, 20, 91, 0.5);
+    color: var(--black);    
+}
+
+/*SECTION CURSO */
+
+.section-curso {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 13rem;
+    
+}
+
+.section-curso-left {
+    width: 27%;
+    
+}
+
+#curso-title { 
+    color: var(--light-gray);
+    text-transform: uppercase;
+    font-size: 5rem;
+    font-family: 'Gotham HTF Book';
+    margin-bottom: 6rem;
+}
+
+#curso-paragrafo {
+    color: var(--light-gray);
+    font-size: 1.6rem;    
+    font-family: 'Roboto';
+    line-height: 3rem;
+    border-right: 1px solid var(--light-gray);
+    
+}
+
+.section-curso-right {
+    width: 24%;
+    height: 20vh;
+    margin: 0 0 5rem 5rem;
+}
+
+.title-magenta {
+    color: var(--magenta);
+    font-size: 1.6rem;
+    text-transform: uppercase;
+}
+
+#curso-subtitulo {
+    font-family: 'Gotham HTF Book';
+}
+
+.paragrafo-container {
+    font-family: 'Roboto';
+    color: var(--gray);
+    font-size: 1.6rem;
+    line-height: 3rem;
+}

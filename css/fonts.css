@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+@font-face {
+    font-family: 'Gotham HTF Medium';
+    src: url(../fonts/GothamHTF-Medium.otf);
+}
+
+@font-face {
+    font-family: 'Gotham HTF Bold';
+    src: url(../fonts/GothamHTF-Bold.otf);
+}
+
+@font-face {
+    font-family: 'Gotham HTF Book';
+    src: url(../fonts/GothamHTF-Book.otf);
+}
+
