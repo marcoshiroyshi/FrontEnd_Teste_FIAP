@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/fonts.css">
     <link rel="stylesheet" href="./css/scrollbar.css">
-    <link rel="stylesheet" type="text/css" href="./css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <title>FIAP</title>
 </head>
 <body>
@@ -30,7 +30,8 @@
         <a href="#" id="hero-btn" class="btn-container">Inscreva-se</a>
         <div class="hero-scroll">   
             <p>Scroll down</p>
-            <!-- arrow down-->
+            <i id="hero-i"class="fa-thin fa-chevron-down fa"></i>
+            <!--arrow precisa ser alterado-->
         </div>     
     </section>
     <!--SECTION CURSO (APENAS TEXTO)-->
@@ -65,12 +66,14 @@
                 <div class="matriz-line"></div>
                 <h2 class="matriz-subtitle">2.000 horas/aula</h2>
             </div>
-            <div class="matriz-accordion">
-                <p class="matriz-accordion-title">1º ano - 2022</p>
-                <div class="matriz-circle">
-                    <div class="matriz-line-magenta"></div>
-                    <div class="matriz-line-magenta"></div>
-                </div>
+            <div class="accordion">
+                <header class="accordion-header">
+                    <p class="matriz-accordion-title">1º ano - 2022</p>
+                    <div class="matriz-circle">
+                    <i id ="matriz-i"class="fa-thin fa-plus fa-6x"></i>
+                    </div>
+                </header>
+                <p class="matriz-descricao">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni ullam assumenda eos libero nostrum, illo voluptas corporis omnis in laudantium excepturi nemo corrupti harum qui mollitia sapiente voluptatum nihil. Reprehenderit?</p>                
             </div>
     </section>
 
@@ -93,7 +96,7 @@
                     <td class="turmas-table-info">2 anos (2.000 horas)</td>
                     <td class="turmas-table-info">3 dias por semana com aulas<br> presenciais + 2 dias por semana aulas<br> remotas ao
                         vivo + Nano Courses</td>
-                    <td class="turmas-table-info">Matutino<br> Das 07h40 às 12h</td>
+                    <td id="matutino"class="turmas-table-info">Matutino<br> Das 07h40 às 12h</td>
                     <td class="turmas-table-info">R$ 990,00*</td>                    
                 </tr>
                 <tr>
@@ -101,14 +104,15 @@
                     <td class="turmas-table-info">2 anos (2.000 horas)</td>
                     <td class="turmas-table-info">3 dias por semana com aulas<br> presenciais + 2 dias por semana aulas<br> remotas ao
 vivo + Nano Courses</td>
-                    <td class="turmas-table-info">Noturno<br> Das 19h às 23h15</td>
+                    <td id="noturno" class="turmas-table-info">Noturno<br> Das 19h às 23h15</td>
                     <td class="turmas-table-info">R$ 1.295,00*</td>                    
                 </tr>
             </table>
             <p class="table-subtitle">* VALOR PARA 2022 NO PLANO ESTENDIDO.</p>
             <a id="turmas-btn" class="btn-container" href="https://vestibular.fiap.com.br/etapa1.asp" target="_blank">inscreva-se</a>
     </section>
-    <footer>       
-    </footer>
+    <footer></footer>  
+    
+    <script src="./js/script.js"></script>
 </body>
 </html>
