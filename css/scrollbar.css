@@ -1,0 +1,9 @@
+body::-webkit-scrollbar {
+    width: 5px;               /* largura da scrollbar*/
+  }    
+  
+  body::-webkit-scrollbar-thumb {
+    background-color: var(--magenta);    /* color of the scroll thumb */
+    border-radius: 10px;       /* roundness of the scroll thumb */    
+    height: 5px;
+  }

@@ -8,7 +8,8 @@
     <link rel="stylesheet" href="./css/variables.css">    
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/fonts.css">
-    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/scrollbar.css">
+    <link rel="stylesheet" type="text/css" href="./css/all.min.css">
     <title>FIAP</title>
 </head>
 <body>
@@ -29,9 +30,10 @@
         <a href="#" id="hero-btn" class="btn-container">Inscreva-se</a>
         <div class="hero-scroll">   
             <p>Scroll down</p>
-            <a href="#" id="hero-arrow"></a>
+            <!-- arrow down-->
         </div>     
     </section>
+    <!--SECTION CURSO (APENAS TEXTO)-->
     <section id ="curso" class="section-curso">
         <div class="section-curso-left">    
             <h1 id="curso-title">O curso</h1>
@@ -42,10 +44,10 @@
                 Gigantes como Amazon e outros marketplaces crescem a cada dia mais. Neste cenário, o mercado se
                 expande e as vagas para desenvolvimento web, desenvolvimento de e-commerce, marketplaces acompanham
                 esse crescimento. É um novo mundo onde o mindset é ser digital.</p>
-        </div>
+        </div>       
         <div class="section-curso-right">
             <h2 id ="curso-subtitulo" class="title-magenta">Você vai se preparar para:</h2>
-                <ul>
+                <ul>                    
                     <li class="paragrafo-container">Desenvolvimento Front-end: HTML, CSS, Javascript, HTML 5, Angular, Gulp,
                         Bootstrap, Ruby, React Sass, dentre linguagens, frameworks e bibliotecas.</li>
                     <li class="paragrafo-container">E-Commerce & E-Bussiness: desenvolvimento de marketplaces, domínio na área
@@ -55,6 +57,58 @@
                 </ul>
         </div>
     </section>
-    <section id="matriz" class="section-matriz"></section>
+
+    <!--SECTION MATRIZ CURRICULAR (ACCORDION)-->
+    <section id="matriz" class="section-matriz">
+        <h1 id="matriz-title" class="title-container">matriz curricular</h1>
+            <div class="matriz-container">
+                <div class="matriz-line"></div>
+                <h2 class="matriz-subtitle">2.000 horas/aula</h2>
+            </div>
+            <div class="matriz-accordion">
+                <p class="matriz-accordion-title">1º ano - 2022</p>
+                <div class="matriz-circle">
+                    <div class="matriz-line-magenta"></div>
+                    <div class="matriz-line-magenta"></div>
+                </div>
+            </div>
+    </section>
+
+    <!-- SECTION TURMAS (TABELAS)-->
+    <section class="turmas">
+        <div class="turmas-container">            
+            <h1 id="turmas-title" class="title-container">turmas 2022</h1>            
+            <div class="turmas-title-line"></div>
+        </div>
+            <table class="turmas-table">
+                <tr>
+                    <th class="turmas-table-header">Campus</th>
+                    <th class="turmas-table-header">Duração</th>
+                    <th class="turmas-table-header">Dias</th>
+                    <th class="turmas-table-header">Horário</th>
+                    <th class="turmas-table-header">Mensalidade</th>
+                </tr>
+                <tr>
+                    <td class="turmas-table-magenta">aclimacão</td>
+                    <td class="turmas-table-info">2 anos (2.000 horas)</td>
+                    <td class="turmas-table-info">3 dias por semana com aulas<br> presenciais + 2 dias por semana aulas<br> remotas ao
+                        vivo + Nano Courses</td>
+                    <td class="turmas-table-info">Matutino<br> Das 07h40 às 12h</td>
+                    <td class="turmas-table-info">R$ 990,00*</td>                    
+                </tr>
+                <tr>
+                    <td class="turmas-table-magenta">vila olímpia</td>
+                    <td class="turmas-table-info">2 anos (2.000 horas)</td>
+                    <td class="turmas-table-info">3 dias por semana com aulas<br> presenciais + 2 dias por semana aulas<br> remotas ao
+vivo + Nano Courses</td>
+                    <td class="turmas-table-info">Noturno<br> Das 19h às 23h15</td>
+                    <td class="turmas-table-info">R$ 1.295,00*</td>                    
+                </tr>
+            </table>
+            <p class="table-subtitle">* VALOR PARA 2022 NO PLANO ESTENDIDO.</p>
+            <a id="turmas-btn" class="btn-container" href="https://vestibular.fiap.com.br/etapa1.asp" target="_blank">inscreva-se</a>
+    </section>
+    <footer>       
+    </footer>
 </body>
 </html>

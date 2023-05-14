@@ -45,8 +45,13 @@ body {
     color: var(--white);
 }
 
+.header-nav {
+    display: flex;
+}
+
 #header-btn:hover {
     box-shadow: 0 0 20px var(--magenta);
+
 }
 
 .header-links:hover {
@@ -73,7 +78,7 @@ body {
     font-family: 'Gotham HTF Book';
     color: var(--light-gray);    
     text-transform: uppercase;    
-    margin-top: 28rem;     
+    margin-top: 32rem;     
         
 }
 
@@ -89,8 +94,7 @@ body {
 }
 
 .hero-scroll {
-    margin-bottom: 20rem;
-    border: 1px solid grey;
+    margin-bottom: 20rem;    
     height: 10rem;
 }
 
@@ -109,7 +113,7 @@ body {
 }
 
 #hero-btn {
-    margin-bottom: 18rem;
+    margin-bottom: 12rem;
     
 }
 
@@ -125,7 +129,7 @@ body {
     color: var(--magenta);
     transition: .2s;
     text-transform: uppercase;
-    width: 15rem;
+    width: 18rem;
     text-align: center;
 }
 
@@ -139,14 +143,16 @@ body {
 
 .section-curso {
     display: flex;
-    align-items: center;
+    margin: 0 auto; 
+    flex-wrap: wrap;
+    width: 100%;
     justify-content: center;
-    margin-bottom: 13rem;
-    
 }
 
 .section-curso-left {
-    width: 27%;
+    width: 30%; 
+    margin-right: 10rem;
+    
     
 }
 
@@ -156,21 +162,24 @@ body {
     font-size: 5rem;
     font-family: 'Gotham HTF Book';
     margin-bottom: 6rem;
+    font-weight: 500;
 }
 
-#curso-paragrafo {
+#curso-paragrafo {    
     color: var(--light-gray);
     font-size: 1.6rem;    
     font-family: 'Roboto';
     line-height: 3rem;
-    border-right: 1px solid var(--light-gray);
+    border-right: 0.5px solid var(--gray);
+    padding-right: 5rem;   
     
 }
 
 .section-curso-right {
     width: 24%;
     height: 20vh;
-    margin: 0 0 5rem 5rem;
+    margin: 0 0 10rem 5rem;
+    
 }
 
 .title-magenta {
@@ -181,11 +190,162 @@ body {
 
 #curso-subtitulo {
     font-family: 'Gotham HTF Book';
+    margin-top: 5rem;    
 }
+
 
 .paragrafo-container {
     font-family: 'Roboto';
     color: var(--gray);
     font-size: 1.6rem;
     line-height: 3rem;
+    margin: 4rem 0; 
+    
+}
+
+/*MATRIZ CURRICULAR */
+
+.section-matriz {
+    width: 95rem;
+    margin: 20rem auto;
+}
+
+.title-container {
+    font-family: 'Gotham HTF Medium';
+    font-weight: 500;
+    font-size: 4.5rem;
+    text-transform: uppercase;
+    color: var(--light-gray);
+}
+
+.matriz-container {
+    display: flex;
+    margin: 1.5rem 0;
+}
+
+.matriz-line {    
+    height: 1px;
+    width: 74px;
+    background-color: var(--gray);    
+    margin: 17px 14px 0 0;
+}
+
+.matriz-subtitle {
+    font-family: 'Gotham HTF Book';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 35px;
+    text-transform: uppercase;
+    color: var(--gray);
+    margin-bottom: 85px;
+}
+
+/* MATRIZ ACCORDION */
+
+.matriz-accordion {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 9rem;
+    border: 1px solid var(--gray);
+    cursor: pointer;
+    padding: 0 4rem;
+}
+
+.matriz-accordion-title {
+    font-family: 'Roboto';
+    color: var(--light-gray);
+    font-size: 2.5rem;
+    font-weight: 500;
+    line-height: 3.5rem;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+}
+
+.matriz-circle {
+    display: flex;
+    align-items: center;
+    width: 5rem;
+    height: 5rem;
+    border: 2px solid var(--magenta);
+    border-radius: 100%;
+}
+
+.matriz-line-magenta {
+    border: 1px solid var(--magenta);
+    width: 2rem;
+    margin: 0 auto;
+}
+
+
+
+
+/* SECTION TURMAS (TABELAS) */
+
+.turmas {
+    width: 100%;    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.turmas-table {    
+    margin: 5rem 0;
+    width: 95rem;
+    height: 216px;
+    text-align: center;
+}
+
+.turmas-title-line {
+    width: 40px;
+    height: 4px;
+    margin: 25px auto;
+    background-color: var(--magenta);
+}
+
+.turmas-table-header {
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+    color: var(--light-gray);
+    font-family: 'Gotham HTF Medium';
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.05rem;
+}
+
+.turmas-table, td, tr, th {
+    border: 1px solid var(--header-gray);
+    border-collapse: collapse;
+}
+
+.turmas-table-magenta {
+    color: var(--magenta);
+    text-transform: uppercase;
+    letter-spacing: 0.05rem;
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+    font-family: 'Roboto';
+    font-weight: 700;
+
+}
+
+.turmas-table-info {
+    letter-spacing: 0.05rem;
+    font-family: 'Roboto';
+    font-weight: 500;
+    color: var(--light-gray);
+    font-size: 1.1rem;
+    line-height: 1.6rem;
+}
+
+.table-subtitle {
+
+}
+
+#turmas-btn{
+    margin: 0 auto;
 }
