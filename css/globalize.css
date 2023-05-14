@@ -368,7 +368,9 @@ body {
     color: var(--light-gray);
     font-size: 1.1rem;
     line-height: 1.6rem;
-    border: 1px solid grey
+    position: relative;
+    bottom: 45px;
+    
 
 }
 
