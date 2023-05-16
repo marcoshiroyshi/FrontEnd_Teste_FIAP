@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="./css/fonts.css">
     <link rel="stylesheet" href="./css/scrollbar.css">
     <link rel="stylesheet" href="./css/accordion.css">
+    <link rel="stylesheet" href="./css/mobile.css">
     <link href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css" rel="stylesheet"/>
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <title>FIAP</title>     
@@ -20,21 +21,25 @@
             <nav class="header-nav">
                 <a class="header-links" href="#curso">O curso</a>
                 <a class="header-links" href="#matriz">Matriz Curricular</a>
-                <a class="header-links" href="#">Turmas</a>
+                <a class="header-links" href="#turmas">Turmas</a>
             </nav>
         <a href="#" id="header-btn">Inscreva-se</a>
+        <i id="menu-hamburguer" class='bx bx-menu'></i>
     </header>
+    
+    <!--HERO SECTION-->
     <section class="hero-section">
         <div class="hero-container">
             <h1>Sistemas para internet</h1>
             <h2>Full stack, e-commerce & digital transformation</h2>            
         </div>
         <a href="#" id="hero-btn" class="btn-container">Inscreva-se</a>
+        <a href="#curso">
         <div class="hero-scroll">   
             <p>Scroll down</p>
             <i id="hero-i"class="bx bx-chevron-down bx-fade-down"></i>
-            <!--arrow precisa ser alterado-->
-        </div>     
+        </div>
+        </a>            
     </section>
     <!--SECTION CURSO (APENAS TEXTO)-->
 
@@ -64,7 +69,7 @@
 
     <!--SECTION MATRIZ CURRICULAR (ACCORDION)-->
 
-    <section class="accordion container">
+    <section id="matriz" class="accordion container">
         <div class="accordion-container">
             <div class="hero">
                 <h1 id="matriz-title" class="title-container">matriz curricular</h1>
@@ -107,7 +112,7 @@
     </section>
 
     <!-- SECTION TURMAS (TABELAS)-->
-    <section class="turmas">
+    <section id="turmas" class="turmas">
         <div class="turmas-container">            
             <h1 id="turmas-title" class="title-container">turmas 2022</h1>            
             <div class="turmas-title-line"></div>
@@ -138,7 +143,7 @@
                 </tr>
             </table>
             <p class="table-subtitle">* VALOR PARA 2022 NO PLANO ESTENDIDO.</p>
-            <a id="turmas-btn" class="btn-container" href="https://vestibular.fiap.com.br/etapa1.asp" target="_blank">inscreva-se</a>
+            <a id="turmas-btn" class="btn-container" href="#">inscreva-se</a>
     </section>   
     <footer></footer>  
 <script src="js/script.js"></script>    

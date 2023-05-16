@@ -59,6 +59,11 @@ body {
     text-shadow: 0 0 20px rgba(237, 20, 91, 0.5);
 }
 
+#menu-hamburguer {
+    color: white;
+    font-size: 6rem;
+    display: none;
+}
 
 /*HERO SECTION */
 
@@ -97,6 +102,7 @@ body {
 .hero-scroll {
     margin-bottom: 20rem;    
     height: 10rem;
+    cursor: pointer;
 }
 
 .hero-scroll p {
@@ -295,3 +301,4 @@ footer {
     height: 20vh;
     
 }
+

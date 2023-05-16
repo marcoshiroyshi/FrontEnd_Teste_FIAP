@@ -1,0 +1,63 @@
+@media screen and (max-width: 480px) {
+    .header-nav, #header-btn {
+        display: none;
+    }    
+
+    #menu-hamburguer {
+        margin-left: 15rem; 
+        display: block;
+    }
+
+    .hero-section {
+        background-position: top;
+    }
+
+   #hero-btn {
+    margin-top: 4rem;
+   }
+
+   .section-curso {
+    width:130%;    
+   }
+
+   .section-curso-left {
+    width:200rem;    
+    margin-left: 3rem; 
+    
+   }
+
+   #curso-paragrafo {
+    border: none;   
+   
+   }
+
+   .section-curso-right {
+    width: 80%;
+   
+   }
+
+   .accordion-container {
+    margin: 0 auto;
+    width: 350px;
+    
+   }
+
+   .title-container {
+    font-size: 3rem;
+   }
+
+   .matriz-subtitle {
+    font-size: 20px;
+   }
+
+   .content {
+    width: 30rem;
+    margin: 0 20px;
+    height: 0;
+   }
+
+   .turmas-table {
+    width: 20rem;
+   }
+
+}

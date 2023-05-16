@@ -10,6 +10,17 @@
     margin: 17px 14px 0 0;
 }
 
+.matriz-subtitle {
+    font-family: 'Gotham HTF Book';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 35px;
+    text-transform: uppercase;
+    color: var(--gray);
+    margin-bottom: 85px;
+}
+
 #section-matriz {
     width: 95rem;
     margin: 20rem auto;
@@ -143,11 +154,8 @@
     margin: 0 40px;
     display: flex;
     
-    
       
 }
-
-
 
 /* Muda o ícone para '-'  */
 .accordion-open .question-icon::before {
