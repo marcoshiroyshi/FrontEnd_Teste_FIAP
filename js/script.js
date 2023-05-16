@@ -1,31 +1,28 @@
-const accordion_item = document.querySelectorAll(".accordion_item");
+const accordionItems = document.querySelectorAll(".accordion-item");
 
-accordion_item.forEach((item) => {
-  const accordion_header_item = item.querySelector(".accordion_header");
+accordionItems.forEach((item) => {
+	const accordionHeader = item.querySelector(".accordion-header");
 
-  accordion_header_item.addEventListener("click", () => {
-    const accordion_content_item = item.querySelector(".accordion_content");
+	accordionHeader.addEventListener("click", () => {
+		const openItem = document.querySelector(".accordion-open");
 
-    const item_actived = document.querySelector(".active");
+		toggleItem(item);
 
-    VerifyActive(item, accordion_content_item, item_actived);
-  });
+		if (openItem && openItem !== item) {
+			toggleItem(openItem);
+		}
+	});
 });
 
-function VerifyActive(item, content, content_actived) {
-  const icon_item = item.querySelector(".icon");
-  const icon_item_active = document.querySelectorAll(".icon");
+const toggleItem = (item) => {
+	const accordionContent = item.querySelector(".content");
 
-  icon_item_active.forEach((item) => (item.innerHTML = "+"));
+	if (item.classList.contains("accordion-open")) {
+		accordionContent.removeAttribute("style");
+		item.classList.remove("accordion-open");
+	} else {
+		accordionContent.style.height = accordionContent.scrollHeight + "px";
+		item.classList.add("accordion-open");
+	}
+};
 
-  if (content_actived) {
-    content_actived.style.height = 0;
-    content_actived.classList.remove("active");
-  }
-
-  if (content !== content_actived) {
-    icon_item.innerHTML = "-";
-    content.classList.add("active");
-    content.style.height = content.scrollHeight + 10 + "px";
-  }
-}

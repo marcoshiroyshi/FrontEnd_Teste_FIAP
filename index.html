@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/fonts.css">
     <link rel="stylesheet" href="./css/scrollbar.css">
+    <link rel="stylesheet" href="./css/accordion.css">
+    <link href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css" rel="stylesheet"/>
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <title>FIAP</title>     
 </head>
@@ -30,11 +32,12 @@
         <a href="#" id="hero-btn" class="btn-container">Inscreva-se</a>
         <div class="hero-scroll">   
             <p>Scroll down</p>
-            <i id="hero-i"class="fa-thin fa-chevron-down fa"></i>
+            <i id="hero-i"class="bx bx-chevron-down bx-fade-down"></i>
             <!--arrow precisa ser alterado-->
         </div>     
     </section>
     <!--SECTION CURSO (APENAS TEXTO)-->
+
     <section id ="curso" class="section-curso">
         <div class="section-curso-left">    
             <h1 id="curso-title">O curso</h1>
@@ -60,23 +63,47 @@
     </section>
 
     <!--SECTION MATRIZ CURRICULAR (ACCORDION)-->
-    <section id="matriz" class="section-matriz">
-        <h1 id="matriz-title" class="title-container">matriz curricular</h1>
-            <div class="matriz-container">
-                <div class="matriz-line"></div>
-                <h2 class="matriz-subtitle">2.000 horas/aula</h2>
+
+    <section class="accordion container">
+        <div class="accordion-container">
+            <div class="hero">
+                <h1 id="matriz-title" class="title-container">matriz curricular</h1>
+                <div class="matriz-container">
+                    <div class="matriz-line"></div>
+                    <h2 class="matriz-subtitle">2.000 horas/aula</h2>
+                </div>
             </div>
-            <div class="accordion">
-                <header class="accordion-header">
-                    <p class="matriz-accordion-title">1º ano - 2022</p>
-                    <div class="matriz-circle">
-                    <i id ="matriz-i"class="fa-thin fa-plus fa-6x"></i>
-                    </div>
+            <!--Accordion  1 ======================= -->
+            <div class="accordion-item">
+                <header class="accordion-header">						
+                    <h3 class="accordion-title">1º ano - 2022</h3>
+                    <i class="bx bx-plus question-icon"></i>
                 </header>
-                <article class="painel">
-                    <p class="matriz-descricao">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni ullam assumenda eos libero nostrum, illo voluptas corporis omnis in laudantium excepturi nemo corrupti harum qui mollitia sapiente voluptatum nihil. Reprehenderit?</p>                
-                </article>
-                </div>                
+                <div class="content"> 
+                    <div class="accordion-content-container">
+                        <h1 class="accordion-content-title">Cyber Security Devops</h1>
+                        <p class="accordion-descricao"> Os dados de uma empresa valem muito, ainda mais na era do comércio eletrônico, e-commerces, transações bancárias online outros. De acordo com a Forbes, nos próximos anos, 92% das cargas de trabalho serão processadas por centros de dados na nuvem. A maioria dos CEOs e CIOs, no entanto, cita a segurança como um fator primário que impede a adoção total de um modelo de computação baseada na nuvem. Nessa disciplina você aprenderá a projetar, 
+                        gerenciar e controlar todo o patrimônio da empresa que está ou poderá estar localizado na nuvem.
+                        </p>  
+                    </div>                          
+                </div>
+            </div>
+                 <!--Accordion  2 ======================= -->
+                 <div class="accordion-item">
+                    <header class="accordion-header">						
+                        <h3 class="accordion-title">2º ano - 2022</h3>
+                        <i class="bx bx-plus question-icon"></i>
+                    </header>
+                    <div class="content"> 
+                        <div class="accordion-content-container">
+                            <h1 class="accordion-content-title">Cyber Security Devops</h1>
+                            <p class="accordion-descricao"> Os dados de uma empresa valem muito, ainda mais na era do comércio eletrônico, e-commerces, transações bancárias online outros. De acordo com a Forbes, nos próximos anos, 92% das cargas de trabalho serão processadas por centros de dados na nuvem. A maioria dos CEOs e CIOs, no entanto, cita a segurança como um fator primário que impede a adoção total de um modelo de computação baseada na nuvem. Nessa disciplina você aprenderá a projetar, 
+                            gerenciar e controlar todo o patrimônio da empresa que está ou poderá estar localizado na nuvem.
+                            </p>  
+                        </div>                          
+                    </div>
+                </div>       
+            </div>
     </section>
 
     <!-- SECTION TURMAS (TABELAS)-->
@@ -105,7 +132,7 @@
                     <td class="turmas-table-magenta">vila olímpia</td>
                     <td class="turmas-table-info">2 anos (2.000 horas)</td>
                     <td class="turmas-table-info">3 dias por semana com aulas<br> presenciais + 2 dias por semana aulas<br> remotas ao
-vivo + Nano Courses</td>
+                    vivo + Nano Courses</td>
                     <td id="noturno" class="turmas-table-info">Noturno<br> Das 19h às 23h15</td>
                     <td class="turmas-table-info">R$ 1.295,00*</td>                    
                 </tr>

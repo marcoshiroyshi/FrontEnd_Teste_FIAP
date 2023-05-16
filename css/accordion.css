@@ -1,0 +1,159 @@
+.container {
+	max-width: 95rem;	
+    margin: 0 auto;
+}
+
+.matriz-line {    
+    height: 1px;
+    width: 74px;
+    background-color: var(--gray);    
+    margin: 17px 14px 0 0;
+}
+
+#section-matriz {
+    width: 95rem;
+    margin: 20rem auto;
+}
+
+.matriz-container {
+    display: flex;
+    margin: 1.5rem 0;
+}
+
+.title-container {
+    font-family: 'Gotham HTF Medium';
+    font-weight: 500;
+    font-size: 4.5rem;
+    text-transform: uppercase;
+    color: var(--light-gray);
+}
+
+
+/* ACCORDION ======================= */
+
+.accordion {
+	display: grid;
+	align-content: center;
+	height: 100vh;	
+}
+
+.accordion-container {
+	max-width: 100%;
+	position: relative;
+}
+
+.hero {
+	margin-bottom: 1rem;
+}
+
+
+.accordion-header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	column-gap: 0.7rem;
+	padding: 20px 30px;
+	cursor: pointer;
+}
+
+.accordion-title {
+    font-family: 'Roboto';
+    color: var(--light-gray);
+    font-size: 2.5rem;
+    font-weight: 500;
+    line-height: 3.5rem;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+	margin-top: 0.15rem;    
+	transition: 0.3s;
+}
+
+.question-icon {
+	font-size: 4rem;
+    font-weight: 100;
+	height: max-content;
+	color: var(--magenta);
+	transition: 0.3s;	
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 50%;
+	padding: 0.5rem;
+	transition: 0.3s;
+	border: 1px solid var(--magenta);
+}
+
+.accordion-content-container {
+    border-left: 1px solid var(--magenta);
+    padding-left: 10px;
+    margin-bottom: 40px;
+    
+}
+
+.accordion-content-title {	
+	color: var(--magenta);
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 1.6rem;
+    line-height: 4rem;
+    letter-spacing: 0.05rem;
+    text-transform: uppercase;
+}
+
+.accordion-descricao {	
+	font-family: 'Roboto';
+    color: var(--gray);
+    font-size: 1.6rem;
+    line-height: 3rem;    
+}
+
+
+.accordion-item {
+	background: transparent;	
+	position: relative;
+	transition: all 0.25s ease;
+	border: 1px solid var(--light-gray);
+	margin: 20px 0;
+}
+
+.accordion-item::before {
+	content: "";
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	height: 1px;
+	width: 100%;
+	
+}
+
+.accordion-item:last-child::before {
+	display: none;
+}
+
+.accordion-item:hover {
+	border: 1px solid var(--magenta);
+}
+
+.content {
+	text-align: justify;
+	overflow: hidden;
+	height: 0;
+	transition: all 0.25s ease;
+    width: 76rem;
+    margin: 0 40px;
+    display: flex;
+    
+    
+      
+}
+
+
+
+/* Muda o ícone para '-'  */
+.accordion-open .question-icon::before {
+	content: "\eb8b";
+}
+
+
+
+
